@@ -2,6 +2,7 @@
 
 from uzkit.money import format_money, money_to_words
 from uzkit.numbers import number_to_words, ordinal
+from uzkit.regions import Region, get_region, list_regions
 from uzkit.translit import to_cyrillic, to_latin
 from uzkit.validators import is_valid_phone, is_valid_plate, normalize_phone
 
@@ -9,9 +10,12 @@ __version__ = "0.1.0"
 
 __all__ = [
     "__version__",
+    "Region",
     "format_money",
+    "get_region",
     "is_valid_phone",
     "is_valid_plate",
+    "list_regions",
     "money_to_words",
     "normalize_phone",
     "number_to_words",

@@ -1,0 +1,16 @@
+[
+  {"name": "Andijon viloyati", "name_cyrillic": "Андижон вилояти", "capital": "Andijon", "capital_cyrillic": "Андижон", "plate_code": "60"},
+  {"name": "Buxoro viloyati", "name_cyrillic": "Бухоро вилояти", "capital": "Buxoro", "capital_cyrillic": "Бухоро", "plate_code": "80"},
+  {"name": "Farg'ona viloyati", "name_cyrillic": "Фарғона вилояти", "capital": "Farg'ona", "capital_cyrillic": "Фарғона", "plate_code": "40"},
+  {"name": "Jizzax viloyati", "name_cyrillic": "Жиззах вилояти", "capital": "Jizzax", "capital_cyrillic": "Жиззах", "plate_code": "25"},
+  {"name": "Namangan viloyati", "name_cyrillic": "Наманган вилояти", "capital": "Namangan", "capital_cyrillic": "Наманган", "plate_code": "50"},
+  {"name": "Navoiy viloyati", "name_cyrillic": "Навоий вилояти", "capital": "Navoiy", "capital_cyrillic": "Навоий", "plate_code": "85"},
+  {"name": "Qashqadaryo viloyati", "name_cyrillic": "Қашқадарё вилояти", "capital": "Qarshi", "capital_cyrillic": "Қарши", "plate_code": "70"},
+  {"name": "Qoraqalpog'iston Respublikasi", "name_cyrillic": "Қорақалпоғистон Республикаси", "capital": "Nukus", "capital_cyrillic": "Нукус", "plate_code": "95"},
+  {"name": "Samarqand viloyati", "name_cyrillic": "Самарқанд вилояти", "capital": "Samarqand", "capital_cyrillic": "Самарқанд", "plate_code": "30"},
+  {"name": "Sirdaryo viloyati", "name_cyrillic": "Сирдарё вилояти", "capital": "Guliston", "capital_cyrillic": "Гулистон", "plate_code": "20"},
+  {"name": "Surxondaryo viloyati", "name_cyrillic": "Сурхондарё вилояти", "capital": "Termiz", "capital_cyrillic": "Термиз", "plate_code": "75"},
+  {"name": "Toshkent shahri", "name_cyrillic": "Тошкент шаҳри", "capital": "Toshkent", "capital_cyrillic": "Тошкент", "plate_code": "01"},
+  {"name": "Toshkent viloyati", "name_cyrillic": "Тошкент вилояти", "capital": "Nurafshon", "capital_cyrillic": "Нурафшон", "plate_code": "10"},
+  {"name": "Xorazm viloyati", "name_cyrillic": "Хоразм вилояти", "capital": "Urganch", "capital_cyrillic": "Урганч", "plate_code": "90"}
+]
