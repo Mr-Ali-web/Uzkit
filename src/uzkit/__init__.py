@@ -6,7 +6,7 @@ from uzkit.regions import Region, get_region, list_regions
 from uzkit.translit import to_cyrillic, to_latin
 from uzkit.validators import is_valid_phone, is_valid_plate, normalize_phone
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "__version__",

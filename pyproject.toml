@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "uzkit"
-version = "0.1.0"
+version = "0.1.1"
 description = "O'zbek tili va ma'lumotlari uchun Python kutubxonasi: transliteratsiya, raqamlarni so'zga aylantirish, so'm summalari, telefon va avtoraqam validatorlari, viloyatlar."
 readme = "README.md"
 license = { text = "MIT" }
