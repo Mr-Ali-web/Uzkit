@@ -1,3 +1,5 @@
+[![tests](https://github.com/Mr-Ali-web/uzkit/actions/workflows/tests.yml/badge.svg)](https://github.com/Mr-Ali-web/uzkit/actions/workflows/tests.yml)
+
 # uzkit
 
 O'zbek tili va ma'lumotlari uchun yordamchi Python kutubxonasi.  
