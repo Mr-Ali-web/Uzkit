@@ -35,7 +35,7 @@ pytest
 
 ## Cheklovlar / Limitations
 
-- Operator va viloyat kodlari rasmiy manbadan tekshirilmagan.
+- Telefon kodlari Wikipedia va operator sahifalariga asoslangan, regulyatorning rasmiy hujjati bilan tekshirilmagan.
 - Faqat mobil raqamlar qo'llab-quvvatlanadi.
 - Viloyatlar ro'yxati Wikipedia/ISO 3166-2:UZ manbalariga asoslangan; rasmiy davlat manbasi bilan to'liq solishtirilmagan.
 

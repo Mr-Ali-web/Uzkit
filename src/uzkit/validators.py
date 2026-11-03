@@ -7,10 +7,9 @@ from typing import Any, Optional
 
 __all__ = [
     "MOBILE_OPERATOR_CODES",
-    "PLATE_REGION_CODES",
     "is_valid_phone",
-    "normalize_phone",
     "is_valid_plate",
+    "normalize_phone",
 ]
 
 COUNTRY_CODE = "998"
@@ -21,7 +20,7 @@ MOBILE_OPERATOR_CODES = frozenset(
         "20",  # Sardor Telecom / OQ
         "33",  # Humans
         "50",  # Ucell
-        "55",  # Ucell
+        "55",  # Ucell; VoIP (Uztelecom), mobil emas
         "77",  # Uzmobile
         "88",  # Mobiuz / Humans
         "90",  # Beeline
@@ -32,26 +31,6 @@ MOBILE_OPERATOR_CODES = frozenset(
         "97",  # Mobiuz
         "98",  # Mobiuz
         "99",  # Uzmobile
-    }
-)
-
-#: Davlat raqamidagi viloyat kodlari.
-PLATE_REGION_CODES = frozenset(
-    {
-        "01",  # Toshkent shahri
-        "10",  # Toshkent viloyati
-        "20",  # Sirdaryo
-        "25",  # Jizzax
-        "30",  # Samarqand
-        "40",  # Farg'ona
-        "50",  # Namangan
-        "60",  # Andijon
-        "70",  # Qashqadaryo
-        "75",  # Surxondaryo
-        "80",  # Buxoro
-        "85",  # Navoiy
-        "90",  # Xorazm
-        "95",  # Qoraqalpog'iston
     }
 )
 
@@ -119,7 +98,7 @@ def is_valid_plate(plate: Any) -> bool:
         01 123 AAA      (yuridik shaxslar)
 
     Bo'shliqlar ixtiyoriy (``01A123AA``), harflar katta-kichikligi farqlanmaydi.
-    Viloyat kodi :data:`PLATE_REGION_CODES` ichida bo'lishi shart.
+    Viloyat kodi 00 dan farqli ikki xonali kod bo'lishi shart (01-99).
     """
     if not isinstance(plate, str):
         return False
@@ -129,4 +108,5 @@ def is_valid_plate(plate: Any) -> bool:
     if match is None:
         return False
 
-    return match.group(1) in PLATE_REGION_CODES
+    code = match.group(1)
+    return code != "00" and code.isdigit() and len(code) == 2

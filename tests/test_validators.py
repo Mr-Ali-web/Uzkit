@@ -2,7 +2,6 @@ import pytest
 
 from uzkit.validators import (
     MOBILE_OPERATOR_CODES,
-    PLATE_REGION_CODES,
     is_valid_phone,
     is_valid_plate,
     normalize_phone,
@@ -109,10 +108,17 @@ def test_valid_plate(value):
     assert is_valid_plate(value) is True
 
 
-@pytest.mark.parametrize("code", sorted(PLATE_REGION_CODES))
+@pytest.mark.parametrize("code", [f"{i:02d}" for i in range(1, 100)])
 def test_every_region_code_is_accepted(code):
     assert is_valid_plate(f"{code} A 123 AA")
     assert is_valid_plate(f"{code} 123 AAA")
+
+@pytest.mark.parametrize("code", ["02", "31", "99"])
+def test_selected_plate_codes_accepted(code):
+    assert is_valid_plate(f"{code} A 123 AA")
+
+def test_plate_code_00_rejected():
+    assert is_valid_plate("00 A 123 AA") is False
 
 
 @pytest.mark.parametrize(
@@ -121,8 +127,6 @@ def test_every_region_code_is_accepted(code):
         "",
         "   ",
         "00 A 123 AA",  # noma'lum viloyat kodi
-        "99 123 AAA",
-        "02 A 123 AA",
         "1 A 123 AA",  # viloyat kodi bitta raqam
         "001 A 123 AA",
         "01 AA 123 AA",

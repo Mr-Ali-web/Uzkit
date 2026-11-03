@@ -82,3 +82,10 @@ def test_immutable_region():
     region = get_region("Xorazm viloyati")
     with pytest.raises(Exception):
         region.name = "changed"
+
+
+def test_region_code_mapping():
+    assert get_region("Qashqadaryo viloyati").plate_code == "70"
+    assert get_region("Surxondaryo viloyati").plate_code == "75"
+    assert get_region("Buxoro viloyati").plate_code == "80"
+    assert get_region("Navoiy viloyati").plate_code == "85"
