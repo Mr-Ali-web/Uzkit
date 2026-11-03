@@ -38,4 +38,4 @@ pytest
 - Viloyatlar ro'yxati Wikipedia/ISO 3166-2:UZ manbalariga asoslangan; rasmiy davlat manbasi bilan to'liq solishtirilmagan.
 
 Operator and region codes are not verified against an official source. Only mobile phone numbers are supported.
-Region list is based on Wikipedia/ISO 3166-2:UZ and has not been fully reconciled with official government sources.
+Region list is based on Wikipedia/ISO 3166-2:UZ and has not been fully reconciled with official government sources.# Uzkit
