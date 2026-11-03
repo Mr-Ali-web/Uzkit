@@ -2,10 +2,18 @@
 
 # uzkit
 
+[![PyPI](https://img.shields.io/pypi/v/uzkit)](https://pypi.org/project/uzkit/)
+
 O'zbek tili va ma'lumotlari uchun yordamchi Python kutubxonasi.  
 Small Python library for Uzbek language and data helpers.
 
 ## O'rnatish / Installation
+
+```bash
+pip install uzkit
+```
+
+## Rivojlantirish / Development
 
 ```bash
 pip install -e ".[dev]"
