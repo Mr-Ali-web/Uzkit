@@ -32,7 +32,10 @@ format_money(1250000)              # '1 250 000 soʻm'
 normalize_phone("+998 90 123 45 67")  # '+998901234567'
 is_valid_phone("+998 90 123 45 67")   # True
 is_valid_plate("01A123BC")         # True
-ordinal(3)                         # 'uchinchi'
+card_type("8600 0000 0000 0007")      # 'Uzcard'
+is_valid_card("8600 0000 0000 0007")  # True
+format_card("9860 0901 0131 2172")    # '9860 0901 0131 2172'
+mask_card("9860 0901 0131 2172")      # '9860 **** **** 2172'
 ```
 
 ## Testlar / Tests
@@ -49,3 +52,8 @@ pytest
 
 Operator and region codes are not verified against an official source. Only mobile phone numbers are supported.
 Region list is based on Wikipedia/ISO 3166-2:UZ and has not been fully reconciled with official government sources.# Uzkit
+
+- Kartalar BIN prefiksi bo'yicha aniqlanadi (Uzcard 8600 va 5614, Humo 9860, shuningdek Visa, Mastercard, UnionPay).
+- `is_valid_card` faqat format va Luhn yig'indisini tekshiradi, karta mavjudligini yoki faolligini emas.
+- Humo uchun Luhn qoidasi rasmiy manbada tasdiqlanmagan, faqat ommaviy test kartasi bilan sinalgan.
+- Kutubxona hech qanday karta raqamini saqlamaydi yoki yubormaydi.
